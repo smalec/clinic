@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20141213171106) do
 
   create_table "appointments", force: true do |t|
     t.string   "date"
+    t.integer  "doctor_id"
+    t.integer  "patient_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
