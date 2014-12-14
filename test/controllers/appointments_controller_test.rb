@@ -3,7 +3,6 @@ require 'test_helper'
 class AppointmentsControllerTest < ActionController::TestCase
   setup do
     @appointment = appointments(:one)
-    @appointment.date = '2015-01-11, 19:30'
   end
 
   test "should get index" do

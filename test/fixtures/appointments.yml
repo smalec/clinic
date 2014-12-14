@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  date: MyString
+  date: 2015-01-11, 19:30
 
 two:
-  date: MyString
+  date: 2015-01-12, 18:00
