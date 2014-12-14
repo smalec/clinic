@@ -1,5 +1,5 @@
 class PatientsController < ApplicationController
-  before_action :set_patient, only: [:show, :edit, :update, :destroy]
+  before_action :set_patient, only: [:show, :edit, :appointments, :update, :destroy]
 
   # GET /patients
   # GET /patients.json
@@ -59,6 +59,10 @@ class PatientsController < ApplicationController
       format.html { redirect_to patients_url, notice: 'Patient was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def appointments
+    @appointments = @patient.appointments
   end
 
   private

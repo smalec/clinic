@@ -5,6 +5,12 @@ class PatientsControllerTest < ActionController::TestCase
     @patient = patients(:one)
   end
 
+  test "should get appointments" do
+    get :appointments, id: @patient
+    assert_response :success
+    assert_not_nil assigns(:appointments)
+  end
+
   test "should get index" do
     get :index
     assert_response :success

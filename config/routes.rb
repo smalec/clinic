@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   resources :doctors
 
+  get 'doctors/:id/appointments' => 'doctors#appointments', as: :doctors_appointment
+  get 'patients/:id/appointments' => 'patients#appointments', as: :patients_appointment
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
